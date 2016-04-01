@@ -30,6 +30,6 @@ namespace HackPSU_Practisce.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<Quote> Quotes;
+        public DbSet<Quote> Quotes { get; set; }
     }
 }

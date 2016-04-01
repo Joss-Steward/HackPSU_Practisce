@@ -177,6 +177,10 @@
     <Compile Include="Migrations\201604011846160_Added quotes.Designer.cs">
       <DependentUpon>201604011846160_Added quotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604011934233_fixed quotes, AGAIN.cs" />
+    <Compile Include="Migrations\201604011934233_fixed quotes, AGAIN.Designer.cs">
+      <DependentUpon>201604011934233_fixed quotes, AGAIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -253,6 +257,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604011846160_Added quotes.resx">
       <DependentUpon>201604011846160_Added quotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604011934233_fixed quotes, AGAIN.resx">
+      <DependentUpon>201604011934233_fixed quotes, AGAIN.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
