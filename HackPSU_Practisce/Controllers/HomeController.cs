@@ -11,6 +11,8 @@ namespace HackPSU_Practisce.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+
+
         public ActionResult Index()
         {
             return View();
@@ -32,11 +34,12 @@ namespace HackPSU_Practisce.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult GetQuote()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            Random random = new Random();
+            var val = random.Next(0, db.Quotes.Count());
+            var query = db.Quotes.ToList().Skip(val).FirstOrDefault();
+            return Json(query, JsonRequestBehavior.AllowGet);
         }
     }
 }
