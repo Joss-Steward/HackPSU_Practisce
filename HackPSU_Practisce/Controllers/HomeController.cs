@@ -16,26 +16,11 @@ namespace HackPSU_Practisce.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Enter Quote";
-
-            return View();
-        }
-
         [HttpPost]
-        public ActionResult About(string text)
+        public ActionResult Index(string text)
         {
-            ViewBag.Message = text;
             db.Quotes.Add(new Quote() { Text = text });
             db.SaveChanges();
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
