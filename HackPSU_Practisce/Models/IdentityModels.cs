@@ -29,5 +29,7 @@ namespace HackPSU_Practisce.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Quote> Quotes;
     }
 }
